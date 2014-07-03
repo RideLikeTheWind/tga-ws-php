@@ -1,6 +1,7 @@
 <?php
 
 require('soap_ws_sec.php');
+require('functions.php');
 
 //Add the basic WS WSDL file
 $wsdl = "https://ws.sandbox.training.gov.au/Deewr.Tga.Webservices/TrainingComponentService.svc?wsdl";
