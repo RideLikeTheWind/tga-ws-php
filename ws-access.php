@@ -1,6 +1,6 @@
 <?php
 
-require('soap_ws_sec.php');
+require('WSSecurity.php');
 require('functions.php');
 
 //Add the basic WS WSDL file
