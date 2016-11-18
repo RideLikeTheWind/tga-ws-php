@@ -14,10 +14,11 @@ $username = '***';
 $password = '***';
 $client = new WSSoapClient($wsdl, array('location' => $momurl));
 
-//Make sure your set 'PasswordText' otherwise it won't work.
+//Make sure this is set to 'PasswordText' otherwise it won't work.
 $client->__setUsernameToken($username,$password,'PasswordText');
 
 //Add the SOAP header
+$header = $client->generateWSSecurityHeader();
 $client->__setSoapHeaders($header);
 
 try { 
